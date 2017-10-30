@@ -1,12 +1,12 @@
-##**Người thực hiện:** Nguyễn Hồ Nhật Huy
+## **Người thực hiện:** Nguyễn Hồ Nhật Huy
  
 
-#Câu 1: 
+# Câu 1: 
 
-##1. Network  
+## 1. Network  
  * là tập hợp các thiết bị có khả năng truyền dữ liệu và các thiết bị, hệ thống đầu cuối ( như user,server) được kết nối với nhau để có thể giao tiếp và truyền dược dữ liệu. trong một hệ thống mạng có thể truyền tải rất nhiều kiểu dữ liệu, loại dữ liệu và các ứng dụng khác nhau.
 
-##2. Đặc trưng:  
+## 2. Đặc trưng:  
  * __Đường truyền__  
   * Là phương tiện dùng để truyền các tín hiệu điện tử giữa các máy tính. Các tín hiệu điệu tử đó chính là các thông tin, dữ liệu được biểu thị dưới dạng các xung nhị phân (ON_OFF), mọi tín hiệu truyền giữa các máy tính với nhau đều thuộc sóng điện từ, tuỳ theo tần số mà ta có thể dùng các đường truyền vật lý khác nhau  
   
@@ -42,7 +42,7 @@ Quản lý người dùng và các công việc trên hệ thống.
 Hệ điều hành đảm bảo giao tiếp giữa người sử dụng, chương trình ứng dụng với thiết bị của hệ thống.  
 Cung cấp các tiện ích cho việc khai thác hệ thống thuận lợi (ví dụ FORMAT đĩa, sao chép tệp và thư mục, in ấn chung ...)
 
-##3. Các loại topology mạng:
+## 3. Các loại topology mạng:
  * __Mạng dạng hình sao (star topology)__  
 Mạng dạng hình sao bao gồm một trung tâm và các nút thông tin. Các nút thông tin là các trạm đầu cuối, các máy tính và các thiết bị khác của mạng. Trung tâm của mạng điều phối mọi hoạt động trong mạng với các chức năng cơ bản là:  
 Xác định cặp địa chỉ gửi và nhận được phép chiếm tuyến thông tin và liên lạc với nhau.  
@@ -78,11 +78,11 @@ o Loại hình mạng này dùng dây cáp ít nhất, dễ lắp đặt nên ti
 o Tuy vậy cũng có những bất lợi đó là sẽ có sự ùn tắc giao thông khi di chuyển dữ liệu với luư lượng lớn  
 o Khi có sự hỏng hóc ở đoạn nào đó thì rất khó phát hiện, một sự ngừng trên đường dây để sửa chữa sẽ ngừng toàn bộ hệ thống.  
 
-#Câu 2:
+# Câu 2:
 
-##1. Lịch sử mô hình OSI:  
+## 1. Lịch sử mô hình OSI:  
  * Mô hình OSI (Open Systems Interconnection) hay còn gọi là mô hình 7 lớp được International Organization for Standardization (OSI) đưa ra vào năm 1971 với mục tiêu là nhắm đến việc kết nối các sản phẩm của các hãng sản xuất khác nhau, phá vỡ sự độc quyền trong sản xuất, (Ví dụ: Máy IBM chỉ có thể nói chuyện với máy IBM, máy IBM chỉ có thể sử dụng ứng dụng và phần mềm do IBM cung cấp…) và phối hợp các hoạt động chuẩn hóa trong các lĩnh vực viễn thông và hệ thống thông tin.Năm 1984 mô hình tham chiếu OSI chính thức được đưa ra giới thiệu và được ghi trong tiêu chuẩn ISO/IEC 7498-1.  
-##2. Mô hình OSI gồm 7 tầng (7 lớp):  
+## 2. Mô hình OSI gồm 7 tầng (7 lớp):  
 Physical, Data link, Network, transport, session, presentation, application
  
    ![](http://www.ittraining.vn/wp-content/uploads/2016/02/mo-hinh-OSI.png)
@@ -114,8 +114,8 @@ Giải quyết các vấn đề liên quan đến cú pháp và ngữ nghĩa c�
 Xác định giao diện giữa người sử dụng và môi trường OSI. Bao gồm nhiều giao thức ứng dụng cung cấp các phương tiện cho người sử dụng truy cập vào môi trường mạng và cung cấp các dịch vụ phân tán. Khi các thực thể ứng dụng AE (application entity) được thiết lập, nó sẽ gọi đến các phần tử dịch vụ ứng dụng ASE (application service element)
 
 
-#Câu 3:
-##1. Mô hình TCP/IP:   
+# Câu 3:
+## 1. Mô hình TCP/IP:   
  * Gồm 4 tầng là network access, internet, transport, application.   
   * Lớp truy cập mạng (network access):  
 Cung cấp giao diện tương tác với mạng vật lý. Format dữ liệu cho bộ phận truyền tải trung gian và tạo địa chỉ dữ liệu cho các tiểu mạng dựa trên địa chỉ phần cứng vật lý. Cung cấp việc kiểm tra lỗi trong quá trình truyền dữ liệu.  
@@ -128,7 +128,7 @@ Giúp kiểm soát luồng dữ liệu, kiểm tra lỗi và xác nhận các d�
   * Lớp ứng dụng (application):
 Cung cấp các ứng dụng để giải quyết sự cố mạng, vận chuyển file, điều khiển từ xa, và các hoạt động Internet. Đồng thời hỗ trợ Giao diện Lập trình Ứng dụng (API) mạng, cho phép các chương trình được thiết kế cho một hệ điều hành nào đó có thể truy cập mạng.
 
-##2. So sánh 2 mô hình:
+## 2. So sánh 2 mô hình:
 
   * Khi nói đến độ tin cậy chung, TCP/IP được coi là một lựa chọn đáng tin cậy hơn so với mô hình OSI. Trong hầu hết các trường hợp, mô hình OSI được gọi là công cụ tham khảo, là mô hình cũ. OSI cũng được biết đến với giao thức và ranh giới chặt chẽ. TCP/IP cho phép “nới lỏng” các quy tắc, cung cấp các nguyên tắc chung được đáp ứng.
   
