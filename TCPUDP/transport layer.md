@@ -1,6 +1,6 @@
-##Người thực hiện: Nguyễn Hồ Nhật Huy
+## Người thực hiện: Nguyễn Hồ Nhật Huy
 
-#Câu 1:
+# Câu 1:
 * Tầng vận chuyển (transport layer):
 Là tầng cao nhất có liên quan đến các giao thức trao đổi dữ liệu giữa các hệ thống mở, kiểm soát việc truyền thông dữ liệu từ mút tới mút (end to end). Tầng giao vận có các chức năng sau: 
 
@@ -10,8 +10,8 @@ Là tầng cao nhất có liên quan đến các giao thức trao đổi dữ li
  * Thiết lập, duy trì, kết nối các mạch ảo
  * Phát hiện lỗi, phục hồi thông tin và điều khiển luồng.
 
-#Câu 2:
-##1. Hai kiểu kết nối của tầng transport là kiểu hướng kết nối (connection-oriented) và phi kết nối (connectionless).
+# Câu 2:
+## 1. Hai kiểu kết nối của tầng transport là kiểu hướng kết nối (connection-oriented) và phi kết nối (connectionless).
  * Giao thức hướng kết nối có các đặc điểm là:  
   * Kiểm soát được đường truyền: thiết lập kết nối, duy trì và kết thúc kết nối.  
   * Dữ liệu truyền đi một cách tuần tự, nếu bên nhận thành công thì phải gửi tín hiệu báo nhận ACK.  
@@ -34,7 +34,7 @@ Cho phép mất dữ liệu
 Không đảm bảo  
 Tốc độ truyền cao.  
 
-##Câu 3: Hai giao thức tương ứng của hai kiểu kết nối là TCP và UDP
+## Câu 3: Hai giao thức tương ứng của hai kiểu kết nối là TCP và UDP
 * ***Giao thức TCP*** (transmission control protocol): là giao thức định hướng kết nối. Nó giải quyết nhiều vấn đề độ tin cậy để cung cấp một dòng byte đáng tin cậy (reliable byte stream)
 TCP tạo ra các kết nối giữa 2 máy cần trao đổi dữ liệu (Tạo ra một “đường ống” riêng) mà qua đó các gói tin được bảo đảm chuyển tới nơi nhận một cách đáng tin cậy và đúng thứ tự. Nguyên tắc hoạt động: TCP tại máy nguồn phân chia các byte dữ liệu cần truyền đi thành các đoạn (Segment) có kích thước thích hợp. Sau đó, TCP chuyển các gói tin này qua giao thức IP để gửi nó qua một liên mạng đến TCP ở máy đích. TCP nguồn kiểm tra để không có một gói tin nào bị thất lạc bằng cách gán cho mỗi gói tin một số thự tự (Sequence Number). Khi TCP đích nhận được, họ gửi về TCP nguồn một thông báo đã nhận (Acknowledgement) cho các gói tin đã nhận thành công. Một đồng hồ tại TCP nguồn sẽ báo time-out nếu không nhận được tin báo nhận trong khoản thời gian bằng một RRT (Round Trip Time), và dữ liệu (được coi như thất lạc) sẽ được gửi lại. TCP đích sẽ kiểm tra checksum xem có byte nào bị hỏng trong quá trình vận chuyển hay không, giá trị checksum này được tính toán cho mỗi gói dữ liệu tại nơi gửi trước khi nó được gửi và được kiểm tra tại nơi nhận.
  * Thiết lập kết nối  
@@ -56,7 +56,7 @@ TCP tạo ra các kết nối giữa 2 máy cần trao đổi dữ liệu (Tạo
   * Loại bỏ các gói dữ liệu trùng lặp.
   * Cơ chế hạn chế tắc nghẽn đường truyền.
 
-##Câu 4: Thiết lập kết nối TCP được thực hiện trên cơ sở phương thức bắt tay ba bước (three-way Handshaking)
+## Câu 4: Thiết lập kết nối TCP được thực hiện trên cơ sở phương thức bắt tay ba bước (three-way Handshaking)
 * **Bước 1:** yêu cầu kết nối luôn được tiến trình tại máy gửi khởi tạo (máy A), bằng cách gửi một gói tin TCP với cờ SYN = 1 và chứa giá trị khởi tạo tuần tự ISN của client. Giá trị ISN này là một số 4 byte không dấu, được tăng lên mỗi khi kết thúc được yêu cầu (giá trị quay về 0 khi nó tới giá trị 232). Trong thông điệp SYN này còn chứa số hiệu cổng TCP của phần mềm dịch vụ mà tiến trình trạm muốn kết nối đến.
 
 * **Bước 2:** Máy B nhận được thông điệp SYN, nó gửi lại gói SYN với giá trị ISN của nó, đặt cờ ACK= 1 trong trường hợp sẵn sàn kết nối, giá trị ACK = (ISN của A+1) để báo B đã nhận được giá trị ISN của tiến trình trạm gửi (máy A).
